@@ -284,3 +284,34 @@ html, body {
     height: 100%;
     overflow: hidden;
 }
+/* Default styles (for larger screens like desktops) */
+body {
+    font-size: 16px;
+}
+
+.header {
+    width: 100%;
+}
+
+/* Mobile-specific styles (for smaller screens) */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Other adjustments for mobile */
+}
+.container {
+    width: 100%;  /* Takes full width of the screen */
+    padding: 5%;
+}
+
+img {
+    max-width: 100%; /* Ensures images scale down on smaller screens */
+    height: auto;
+}
